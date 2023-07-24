@@ -30,13 +30,13 @@ class Options extends Component {
   //     let total = 0;
   //   }
 
-  //   reset = () => {
-  //     this.setState({
-  //       good: 0,
-  //       neutral: 0,
-  //       bad: 0,
-  //     });
-  //   };
+  reset = () => {
+    this.setState({
+      good: 0,
+      neutral: 0,
+      bad: 0,
+    });
+  };
 
   render() {
     return (
