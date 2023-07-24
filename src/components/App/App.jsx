@@ -1,6 +1,5 @@
 import React from 'react';
 import Options from '../Options/Options';
-import { AppContainer } from './App.styled';
 
 export const App = () => {
   return (
