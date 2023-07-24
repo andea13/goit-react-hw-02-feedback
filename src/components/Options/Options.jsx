@@ -8,27 +8,32 @@ class Options extends Component {
     bad: 0,
   };
 
-  handleOnGoodClick = event => {
-    this.setState({
-      good: (this.state.good += 1),
+  handleOnGoodIncrement = () => {
+    this.setState(prevState => {
+      console.log(prevState);
+      return {
+        good: prevState.good + 1,
+      };
     });
   };
 
-  handleOnNeutralClick = event => {
-    this.setState({
-      neutral: (this.state.neutral += 1),
+  handleOnNeutralIncrement = () => {
+    this.setState(prevState => {
+      console.log(prevState);
+      return {
+        neutral: prevState.neutral + 1,
+      };
     });
   };
 
-  handleOnBadClick = event => {
-    this.setState({
-      bad: (this.state.bad += 1),
+  handleOnBadIncrement = () => {
+    this.setState(prevState => {
+      console.log(prevState);
+      return {
+        bad: prevState.bad + 1,
+      };
     });
   };
-
-  //   countTotalFeedback() {
-  //     let total = 0;
-  //   }
 
   reset = () => {
     this.setState({
@@ -44,17 +49,17 @@ class Options extends Component {
         <p>Please leave feedback</p>
         <ButtonList>
           <li>
-            <Button type="button" onClick={this.handleOnGoodClick}>
+            <Button type="button" onClick={this.handleOnGoodIncrement}>
               Good
             </Button>
           </li>
           <li>
-            <Button type="button" onClick={this.handleOnNeutralClick}>
+            <Button type="button" onClick={this.handleOnNeutralIncrement}>
               Neutral
             </Button>
           </li>
           <li>
-            <Button type="button" onClick={this.handleOnBadClick}>
+            <Button type="button" onClick={this.handleOnBadIncrement}>
               Bad
             </Button>
           </li>
