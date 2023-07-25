@@ -12,13 +12,13 @@ export const Button = styled.button`
   border: 1px solid #898689;
 `;
 
-export const StatsList = styled.ul`
-  list-style: none;
-  display: flex;
+// export const StatList = styled.ul`
+//   list-style: none;
+//   display: flex;
 
-  gap: 20px;
-`;
+//   gap: 20px;
+// `;
 
-export const StatTitle = styled.p`
-  text-align: center;
-`;
+// export const StatTitle = styled.p`
+//   text-align: center;
+// `;
