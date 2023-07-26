@@ -8,6 +8,6 @@ export const StatList = styled.ul`
   gap: 20px;
 `;
 
-export const StatTitle = styled.p`
+export const StatTitle = styled.h2`
   text-align: center;
 `;

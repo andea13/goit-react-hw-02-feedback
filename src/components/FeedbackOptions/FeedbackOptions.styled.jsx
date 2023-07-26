@@ -3,22 +3,14 @@ import styled from '@emotion/styled';
 export const ButtonList = styled.ul`
   list-style: none;
   display: flex;
-  gap: 20px;
+  justify-content: space-evenly;
+  padding: 0;
 `;
 
 export const Button = styled.button`
   border-radius: 8px;
   background-color: #fff;
   border: 1px solid #898689;
+  width: 100px;
+  height: 30px;
 `;
-
-// export const StatList = styled.ul`
-//   list-style: none;
-//   display: flex;
-
-//   gap: 20px;
-// `;
-
-// export const StatTitle = styled.p`
-//   text-align: center;
-// `;
