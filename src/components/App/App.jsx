@@ -37,9 +37,18 @@ class App extends Component {
 
   onLeaveFeedback = feedback => {
     this.setState(prevState => ({
-      [feedback]: (prevState[feedback] += 1),
+      [feedback]: prevState[feedback] + 1,
     }));
   };
+
+  // const Object = {
+  //   name: 'Mango'
+  // }
+
+  // Object.name,
+  // Object['name']
+  // const prop = "name"
+  // Object[prop]
 
   //Object literals
 
